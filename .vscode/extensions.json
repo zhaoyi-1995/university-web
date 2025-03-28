@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode", // Prettier - 代码格式化工具
+    "dbaeumer.vscode-eslint", // ESLint - 代码检查工具
+    "bradlc.vscode-tailwindcss", // Tailwind CSS IntelliSense
+    "dsznajder.es7-react-js-snippets", // React Snippets
+    "eamodio.gitlens", // GitLens
+    "vscode-icons-team.vscode-icons", // VS Code Icons
+    "editorconfig.editorconfig", // EditorConfig
+    "christian-kohler.path-intellisense", // Path Intellisense
+    "formulahendry.vscode-nestjs-snippets" // NestJS Snippets
+    // "msjsdiag.debugger-for-chrome" // Chrome 调试插件
+  ]
+}

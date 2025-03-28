@@ -1,0 +1,52 @@
+{
+  // 保存时自动修复代码问题（ESLint 和 Prettier）
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  // 设置默认格式化工具为 Prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // 保存时自动格式化代码
+  "editor.formatOnSave": true,
+  // 窗口失去焦点时自动保存
+  "files.autoSave": "onFocusChange",
+  // 移动文件时自动更新导入路径（适用于 TS 和 JS）
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  // 隐藏不需要显示的文件和文件夹
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.next": true, // Next.js 构建输出目录
+    "**/dist": true, // NestJS 构建输出目录
+    "**/.git": true
+  },
+  // 配置 ESLint 检查的文件类型
+  "eslint.validate": ["javascript", "typescript", "jsx", "tsx"],
+  // Prettier 配置：使用单引号，ES5 风格的尾逗号
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+  // Tailwind CSS 实验性支持（提高类名自动补全性能）
+  "tailwindCSS.includeLanguages": {
+    "typescript": "javascript",
+    "tsx": "javascript"
+  },
+  // 为特定文件类型指定格式化工具
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[tsx]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsx]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // TypeScript SDK 路径（提高 TS 支持性能）
+  "typescript.tsdk": "node_modules/typescript/lib",
+  // Next.js 特定设置：启用增量类型检查
+  "typescript.enablePromptUseWorkspaceTsdk": true
+}
